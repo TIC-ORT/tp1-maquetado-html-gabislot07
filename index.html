@@ -1,25 +1,65 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maquetado Simple</title>
+  <title>TP1 Gabriel Slotnisky</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="contenedor">
-    <!-- Cabecera -->
-    <header class="cabecera">
-      <div class="barra-superior">
-        <div class="elemento-naranja"></div>
-        <div class="elemento-gris-claro"></div>
-        <div class="elemento-gris-medio"></div>
-      </div>
-      <div class="barra-navegacion">
-        <div class="cuadrado-gris"></div>
-        <div class="cuadrado-gris"></div>
-        <div class="barra-busqueda"></div>
-        <div class="cuadrado-gris"></div>
-        <div class="cuadrado-gris"></div>
-      </div>
-    </header>
+<header> 
+  <div class="imagenHeader"> 
+    <img src="data:image/png;base64,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" alt="imagen">
+  </div>
+
+  <div class="textoHeader">
+    <h1> Vivir y jugar con Grandeza</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam dignissimos, hic iste commodi atque nulla qui doloremque dolore vero rerum modi deserunt molestias omnis libero expedita id ab ipsum.</p>
+  </div>
+</header>
+
+<main class="gridImagenes">
+  <div class="infoMain">
+    <img src="https://cdn.conmebol.com/wp-content/uploads/2024/01/Marcelo-Gallardo-scaled.jpg" alt="main1">
+  </div>
+  <div class="infoMain">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Norberto_Alonso_1984.jpg/640px-Norberto_Alonso_1984.jpg" alt="main2">
+  </div>
+  <div class="infoMain">
+    <img src="https://www.infobae.com/resizer/v2/https%3A%2F%2Fs3.amazonaws.com%2Farc-wordpress-client-uploads%2Finfobae-wp%2Fwp-content%2Fuploads%2F2017%2F08%2F01194858%2FAmadeo-Carrizo-River-SF.jpg?auth=329c89215ea79804f142bac3ce5bccf0a86a8783f523392e5b7cbbfda44ca95c&smart=true&width=350&height=467&quality=85" alt="main3">
+  </div>
+  <div class="infoMain">
+    <img src="https://www.clarin.com/img/2018/12/21/WW9lgKLfL_720x0__1.jpg" alt="main4">
+  </div>
+  <div class="infoMain">
+    <img src="https://pm1.aminoapps.com/6344/51ecd776909620f98b0fe874495987217465e097_00.jpg" alt="main5">
+  </div>
+  <div class="infoMain">
+    <img src="https://montealdia.com.ar/wp-content/uploads/2023/06/315679513_675679430588093_9024976911593811097_n.jpg" alt="main6">
+  </div>
+</main>
+
+<footer>
+  <div class="infoFooter">
+    <h1>Información sobre el club</h1>
+    <p>Club Atlético River Plate 
+      Los Millonarios 
+      Papá de Boca 
+    </p>
+  </div>
+  <div class="infoFooter">
+    <h1>Información de contacto </h1>
+    <p>Teléfono: 0000-0000
+      El correo electrónico: socios@cariverplate.com.ar
+    </p>
+  </div>
+  <div class="infoFooter">
+    <h1>Más información</h1>
+    <p>
+      riverconsultas.com
+    </p>
+  </div>
+</footer>
+  
+</body>
+</html>
